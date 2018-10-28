@@ -73,7 +73,7 @@ header {
 
 .pimg2{
   background-image:url('../img/image2.jpg');
-  min-height:400px;
+  min-height:600px;
 }
 
 .pimg3{
@@ -99,6 +99,10 @@ header {
 img {
   max-width: 100%;
   height: auto;
+}
+
+h1 {
+  font-size: 72px;
 }
 
 .section{
@@ -203,6 +207,10 @@ img {
   .pimg1, .pimg2, .pimg3{
     background-attachment:scroll;
   }
+  .flex-image {
+    margin: 5px 5px;
+      
+  }
 }
 
 
@@ -223,5 +231,12 @@ img {
 
   .flex-container {
     flex-direction: column;
+  }
+  .section{
+    height: auto;
+  }
+
+  h1 {
+    font-size: 36px;
   }
 }
