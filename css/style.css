@@ -42,18 +42,12 @@ header {
 }
 
 .pimg1,
-.pimg2,
-.pimg3 {
+.pimg2 {
   position: relative;
   opacity: 0.9;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  /*
-    fixed = parallax
-    scroll = normal
-  */
   background-attachment: fixed;
 }
 
@@ -75,12 +69,7 @@ header {
 
 .pimg2 {
   background-image: url('../img/image2.jpg');
-  min-height: 600px;
-}
-
-.pimg3 {
-  background-image: url('../img/image3.jpg');
-  min-height: 400px;
+  min-height: 65vh;
 }
 
 .flex-container {
@@ -89,9 +78,6 @@ header {
 }
 
 .flex-image {
-  /* height: 500px; */
-  /* width: 500px; */
-  /* background-color: cadetblue; */
   align-items: center;
   margin: 20px 20px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -117,6 +103,9 @@ h3 {
   color: #666;
 }
 
+.section-contact {
+  height: 25vh;
+}
 .project-tile {
   background-color: inherit;
   font-size: 1.5em;
@@ -185,25 +174,14 @@ h3 {
   color: #111;
   padding: 20px;
   border: 2px solid;
-  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5); */
-  /* background-color:#fff; */
-  /* color:#111; */
-  /* padding:40px; */
   display: inline-block;
-  /* font-size: 1.5em; */
   border: 2px solid;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.ptext .border .border {
-  /* border: 2px solid; */
-  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5); */
-}
-
 @media (max-width: 568px) {
   .pimg1,
-  .pimg2,
-  .pimg3 {
+  .pimg2 {
     background-attachment: scroll;
   }
   .flex-image {
@@ -233,7 +211,8 @@ h3 {
     height: auto;
   }
 
-  h1 {
+  h1,
+  h3 {
     font-size: 36px;
   }
 }
